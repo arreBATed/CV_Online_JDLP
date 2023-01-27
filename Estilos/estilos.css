@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body    {   
+    background-color: #a7d0f8;
+}
+
+header  {
+    display: flex;
+    margin: 0 auto;
+}
+
+#presentacion {
+    padding: 30px;
+}
+
+#titulo_presentacion    {
+    font-family: 'Russo One', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    padding-top: 25px;
+}
+
+nav {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #5D8AA8;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#enlaces_referencias a:visited  {
+    color: white;  
+    font-family: arial; 
+}
+
+#enlaces_referenciasd a:hover { 
+    color: rgb(44, 51, 65); 
+    font-family: arial; 
+}
+  
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;   
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.introduccion {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    text-indent: 20px;
+}
+
+.lista_datos, #titulo_referencias    {
+    font-family: 'Russo One', sans-serif;
+    font-size: large;   
+}
+
+footer  {
+    background-color:#5D8AA8;
+    padding: 10px;
+    margin: 0 auto;
+    display: grid;
+}
+
+#form_comentario   {   
+    margin: 0 auto;
+ }
+
+#footer_part_1  {
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+
+#footer_part_2 {   
+    width: 75%;
+    float: left;
+    padding: 15px;
+}
+
+#comentario_contacto    {
+    width: 500px;
+    height: 103px;
+}
+
+#footer_send    {
+    margin: 0 auto;
+    padding: 10px;
+    align-self: center;
+}
+
+#boton_enviar_comentarios   {
+    width: 70px;   
+}
+
+#detalle_lista_datos_personales {
+    display: none;
+}
+
+#detalle_lista_datos_educacion  {
+    display: none;
+}
+
+#detalle_lista_datos_laborales  {
+    display: none;
+}
+
+#detalle_lista_referencias {
+    display: none;
+}
+
+.botonera_datos {
+    background-color: #a7d0f8;
+    color: black;
+    border: none;
+    font-family: 'Russo One', sans-serif;
+    font-size: large;   
+}
+
+#comentario_presentacion    {
+    font-style: italic;
+}
