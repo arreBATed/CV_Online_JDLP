@@ -3,29 +3,78 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body    {   
-    background-color: #a7d0f8;
-}
-
 header  {
     display: flex;
     margin: 0 auto;
+    background-color: rgb(31,34,43);
+    display: flex;
+    align-items: center;
+    position: relative;
+     
+}
+
+header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    border: 5px solid white;
 }
 
 #presentacion {
-    padding: 30px;
+    color: white;
+    width: 60%;
+    margin-left: auto;
 }
 
-#titulo_presentacion    {
+#titulo_presentacion {
     font-family: 'Russo One', sans-serif;
-    font-size: 35px;
+    font-size: 50px;
+    font-weight: bold; 
+}
+
+#comentario_presentacion {
+    font-size: 16px;
+    color: lightgray;
+}
+
+.area_contenidos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area_izquierda {
+    width: 20%;
+    background-color: rgb(236, 236, 236);
+}
+
+.area_derecha {
+    width: 80%;
+    padding: 50px;
+}
+
+.area_izquierda .datos_contacto {
+    margin-top: 20px;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.datos_contacto h4 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 60px 0;
+}
+
+.datos_contacto h5 {
+    font-size: 13px;
+    margin: 10px 0;
     font-weight: bold;
 }
 
-img {
-    width: 200px;
-    height: 200px;
-    padding-top: 25px;
+.datos_contacto p {
+    font-size: 13px;
 }
 
 nav {
@@ -35,9 +84,8 @@ nav {
     background-color: #5D8AA8;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+#lista_datos {
+    list-style: none;
 }
 
 #enlaces_referencias a:visited  {
@@ -75,11 +123,42 @@ section::after {
     font-size: large;   
 }
 
+.botonera_datos, #boton_enviar_comentarios  {
+    text-decoration:none;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:white;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    background-color:rgb(31,34,43);
+    border-color: slategray;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:35px;
+}
+
+.botonera_datos:hover   {
+    background-color:slategray;
+    color:rgb(31,34,43);
+}
+
+#boton_enviar_comentarios   {   
+    background-color:slategray;
+    border-color: white;
+    color: rgb(31,34,43);
+}
+
 footer  {
-    background-color:#5D8AA8;
-    padding: 10px;
-    margin: 0 auto;
-    display: grid;
+    background-color: rgb(31,34,43);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    padding: 20px;
 }
 
 #form_comentario   {   
@@ -87,30 +166,27 @@ footer  {
  }
 
 #footer_part_1  {
-    width: 25%;
-    float: left;
-    padding: 15px;
+    width: 80%;
+    float: right;
+    padding: 10px;    
 }
 
 #footer_part_2 {   
-    width: 75%;
-    float: left;
-    padding: 15px;
+    width: 80%;
+    float: right;
+    padding: 5px;
 }
 
 #comentario_contacto    {
-    width: 500px;
+    width: 750px;
     height: 103px;
 }
 
 #footer_send    {
     margin: 0 auto;
-    padding: 10px;
-    align-self: center;
-}
-
-#boton_enviar_comentarios   {
-    width: 70px;   
+    padding: 50px;
+    float: right;
+    
 }
 
 #detalle_lista_datos_personales {
@@ -129,12 +205,8 @@ footer  {
     display: none;
 }
 
-.botonera_datos {
-    background-color: #a7d0f8;
-    color: black;
-    border: none;
-    font-family: 'Russo One', sans-serif;
-    font-size: large;   
+#detalle_lista_idiomas {
+    display: none;
 }
 
 #comentario_presentacion    {
